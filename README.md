@@ -1,4 +1,4 @@
-[![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) [![Ionic Logo](https://cdn.worldvectorlogo.com/logos/ionic.svg)](https://ionicframework.com/) [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/)
+[![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) [![Ionic Logo](https://pixxstudios.com/wp-content/uploads/2015/04/ionic.twitter.sample-logo-4203547186-0_avatar.png)](https://ionicframework.com/) [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/)
 
 ![Maintained][maintained-badge]
 [![Travis Build Status][build-badge]][build]
