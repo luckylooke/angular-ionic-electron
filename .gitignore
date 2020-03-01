@@ -21,7 +21,17 @@ src/**/*.js
 .c9/
 *.launch
 .settings/
+*~
+*.sw[mnpcod]
+.tmp
+*.tmp
+*.tmp.*
+*.sublime-project
 *.sublime-workspace
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+$RECYCLE.BIN/
 
 # IDE - VSCode
 .vscode/*
@@ -30,15 +40,29 @@ src/**/*.js
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# misc
+# logs & misc
+*.log
+log.txt
+npm-debug.log*
+
+/.idea
+/.ionic
 /.sass-cache
 /connect.lock
+/.sourcemaps
+/.versions
+/.vscode
 /coverage
 /libpeerconnection.log
 npm-debug.log
 testem.log
 /typings
 package-lock.json
+/dist
+/node_modules
+/platforms
+/plugins
+/www
 
 # e2e
 /e2e/*.js

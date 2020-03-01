@@ -1,28 +1,27 @@
 import { Component } from '@angular/core';
-import { ElectronService } from './core/services';
-import { TranslateService } from '@ngx-translate/core';
-import { AppConfig } from '../environments/environment';
+
+import { Platform } from '@ionic/angular';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss']
 })
 export class AppComponent {
   constructor(
-    public electronService: ElectronService,
-    private translate: TranslateService
+    private platform: Platform,
+    private splashScreen: SplashScreen,
+    private statusBar: StatusBar
   ) {
-    translate.setDefaultLang('en');
-    console.log('AppConfig', AppConfig);
+    this.initializeApp();
+  }
 
-    if (electronService.isElectron) {
-      console.log(process.env);
-      console.log('Mode electron');
-      console.log('Electron ipcRenderer', electronService.ipcRenderer);
-      console.log('NodeJS childProcess', electronService.childProcess);
-    } else {
-      console.log('Mode web');
-    }
+  initializeApp() {
+    this.platform.ready().then(() => {
+      this.statusBar.styleDefault();
+      this.splashScreen.hide();
+    });
   }
 }
